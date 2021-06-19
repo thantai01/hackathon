@@ -1,4 +1,4 @@
-package sample.Controller;
+package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,7 +12,7 @@ import javafx.scene.shape.Path;
 import java.awt.image.ImageObserver;
 import java.nio.file.Paths;
 
-public class Scene1 {
+public class Scene1Controller {
 
     @FXML
     private TextField tfAnswerBox;
@@ -30,13 +30,12 @@ public class Scene1 {
     private ImageView imageView;
 
     public void initialize() {
-
+        imageView.getImage();
+        imageView.setSmooth(true);
 
     }
     public void setBtnNext(ActionEvent actionEvent) {
-        imageView.getImage();
-        imageView.setSmooth(true);
-        imageView.requestFocus();
+
     }
 }
 

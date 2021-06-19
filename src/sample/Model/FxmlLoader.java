@@ -1,7 +1,8 @@
-package sample;
+package sample.Model;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
+import sample.Main;
 
 import java.net.URL;
 import java.util.Objects;
