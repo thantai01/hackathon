@@ -46,6 +46,7 @@ public class MainController {
         CloverFXMLLoader loader = CloverFXMLLoader.getLoaderBySceneView("/sample/views/news-scene.fxml");
         Pane view =  loader.getScene(Pane.class);
         activitiesController.activitiesHeader.setVisible(false);
+        activitiesController.getSubSceneView().getChildren().clear();
         displayScene.getChildren().clear();
         displayScene.getChildren().add(view);
     }
@@ -54,6 +55,7 @@ public class MainController {
         CloverFXMLLoader loader = CloverFXMLLoader.getLoaderBySceneView("/sample/views/about-us-scene.fxml");
         Pane view = loader.getScene(Pane.class);
         activitiesController.activitiesHeader.setVisible(false);
+        activitiesController.getSubSceneView().getChildren().clear();
         displayScene.getChildren().clear();
         displayScene.getChildren().add(view);
     }
@@ -62,6 +64,7 @@ public class MainController {
         CloverFXMLLoader loader = CloverFXMLLoader.getLoaderBySceneView("/sample/views/help-scene.fxml");
         Pane view = loader.getScene(Pane.class);
         activitiesController.activitiesHeader.setVisible(false);
+        activitiesController.getSubSceneView().getChildren().clear();
         displayScene.getChildren().clear();
         displayScene.getChildren().add(view);
     }

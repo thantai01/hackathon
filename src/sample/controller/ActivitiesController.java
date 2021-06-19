@@ -27,6 +27,10 @@ public class ActivitiesController {
     @FXML
     private Pane subSceneView;
 
+    public Pane getSubSceneView() {
+        return subSceneView;
+    }
+
     @FXML
     public Pane activitiesHeader;
 
