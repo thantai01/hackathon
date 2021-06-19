@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-border-style: solid;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MainController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="300.0" style="-fx-border-color: black;">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #d3d3d3;" />
+            <Button fx:id="btnScene3" graphicTextGap="5.0" layoutX="11.0" layoutY="269.0" mnemonicParsing="false" onAction="#showActivitiesMenu" prefHeight="80.0" prefWidth="300.0" text="Hoạt động ">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Button>
+            <Button fx:id="btnScene1" graphicTextGap="5.0" mnemonicParsing="false" onAction="#showNews" prefHeight="80.0" prefWidth="300.0" text="Tin tức">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Button>
+            <Button fx:id="btnScene2" graphicTextGap="5.0" layoutX="11.0" layoutY="211.0" mnemonicParsing="false" onAction="#showAboutUs" prefHeight="80.0" prefWidth="300.0" text="Về chúng tôi">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Button>
+            <Button fx:id="btnScene4" graphicTextGap="5.0" layoutX="11.0" layoutY="327.0" mnemonicParsing="false" onAction="#showHelp" prefHeight="80.0" prefWidth="300.0" text="Thông tin trợ giúp">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Button>
+            <Button fx:id="btnScene5" graphicTextGap="5.0" layoutX="21.0" layoutY="451.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="80.0" prefWidth="300.0" text="Thoát">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="301.0" layoutY="196.0" prefHeight="504.0" prefWidth="698.0">
+         <children>
+            <AnchorPane fx:id="displayScene" prefHeight="511.0" prefWidth="698.0" />
+         </children>
+      </VBox>
+      <HBox layoutX="302.0" layoutY="4.0" prefHeight="194.0" prefWidth="692.0">
+         <children>
+            <BorderPane fx:id="displaySubMenu" prefHeight="200.0" prefWidth="699.0" style="-fx-border-color: black;">
+               <center>
+                  <ImageView fitHeight="154.0" fitWidth="683.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../Image/clover.png" />
+                     </image>
+                  </ImageView>
+               </center></BorderPane>
+         </children></HBox>
+   </children>
+</AnchorPane>
